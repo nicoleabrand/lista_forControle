@@ -4,14 +4,21 @@
     PROBLEMA
     Considere a lista de letras abaixo:
     let listaDeLetras = ["a", "b", "d", "e", "E", "F", "C", "U", "u", "e", "W", "D"];
-    Faça um programa que identifique as letras repetidas que estão contidas na lista e apresente cada letra apenas uma única vez, e em ordem alfabética.
+    Faça um programa que identifique as letras repetidas que estão contidas na lista e apresente cada posicao apenas uma única vez, e em ordem alfabética.
     *Letras maiúsculas e minúsculas são a mesma letra e não podem ser repetidas!
     **Apresente apenas letras minúsculas!
     */
 
     //ENTRADA
-
-    
+    let listaDeLetras = ["a", "b", "d", "e", "E", "F", "C", "U", "u", "e", "W", "D"];
+    let newLista = [];
+    for (let posicao = 0; posicao<listaDeLetras.length; posicao++) {
+       const letra = listaDeLetras[posicao].toLowerCase();
+       if(newLista.includes(letra)== false) {
+        newLista.push(letra)
+       }
+    }
+    document.write(newLista.sort().join(", "))
     //PROCESSAMENTO
 
     
