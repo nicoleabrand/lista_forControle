@@ -7,9 +7,13 @@
     */
 
     //ENTRADA
-
-
-    //PROCESSAMENTO
+    let numeros= []
+    for (let index = 1; index <= 5; index++) {
+        const numero = Number(prompt(`Informe um número`));
+        numeros.push(numero)
+    }
+    numeros.sort((a, b) => b-a)
+    alert(`O maior número é ${numeros}`)
 
 
     //SAÍDA
