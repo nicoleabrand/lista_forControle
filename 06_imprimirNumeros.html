@@ -8,11 +8,22 @@
     //ENTRADA
     const numInicial = Number(prompt(`Informe um número inicial`))
     const numFinal = Number(prompt(`Informe um número final`))
-    for (let index = 0; index < array.length; index++) {
-        const element = array[index];
-        
+    let pares= []
+    let impares= []
+    if(numInicial<numFinal){
+        for (let index = numInicial; index<=numFinal; index%2) {
+            if(index=0){
+                pares.push(index)
+            }
+            if(index!=0){
+                impares.push(index)
+            }
+        }
+    alert(`Os números pares são ${pares.join(", ")} e os ímpares ${impares.join(", ")}`)
     }
-    
+    else{
+        alert(`Erro! O número inicial tem que ser menor que o final!`)
+    }
     //PROCESSAMENTO
 
     

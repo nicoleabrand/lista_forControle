@@ -5,11 +5,16 @@
     */
 
     //ENTRADA
-    
-    for (let index = 0; index <=100 && index>=1; index++) {
-        const element = array[index];
-        
+    let multiples= []
+    // let soma= 0
+    for (let index = 1; index <=100; index++) {
+        if (index%3==0){
+            multiples.push(index)
+            // soma = soma + index
+        }
     }
+    let soma = multiples.reduce((soma, valor) => soma + valor, 0);
+    alert(`Os múltiplos de 3 entre 1 e 100 são ${multiples.join(", ")} e a soma é ${soma}`)
     //PROCESSAMENTO
 
 
