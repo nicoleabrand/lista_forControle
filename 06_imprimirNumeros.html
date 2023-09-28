@@ -11,11 +11,11 @@
     let pares= []
     let impares= []
     if(numInicial<numFinal){
-        for (let index = numInicial; index<=numFinal; index%2) {
-            if(index=0){
+        for (let index = numInicial; index<=numFinal; index++) {
+            if(index%2==0){
                 pares.push(index)
             }
-            if(index!=0){
+            else {
                 impares.push(index)
             }
         }
